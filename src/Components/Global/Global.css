@@ -1,6 +1,6 @@
 .global-wrapper {
     background-color: black;
-    color: white;
+    color:  rgb(185, 185, 185);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     padding-bottom: 120px;
@@ -95,7 +95,7 @@
 
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .global-right p {
         font-size: 40px;
     }

@@ -50,7 +50,7 @@
 
 .column p:hover {
     text-decoration: underline;
-    color: white;
+    color:  rgb(185, 185, 185);
 }
 
 .count {

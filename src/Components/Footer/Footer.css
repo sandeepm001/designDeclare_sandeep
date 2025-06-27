@@ -164,11 +164,11 @@ a {
 
 .submit-btn3:hover {
     background: black;
-    color: white;
+    color:  rgb(185, 185, 185);
 }
 
 .footer-anchor:hover {
-    color: white;
+    color:  rgb(185, 185, 185);
 }
 
 .footer-right-2 {
@@ -183,7 +183,7 @@ a {
 }
 
 .footer-right-2 span:hover {
-    color: white;
+    color:  rgb(185, 185, 185);
 }
 
 /* animation */
@@ -274,7 +274,7 @@ a {
     }
 
     .submit-btn3 {
-        width: 95%;
+        width: 90%;
         align-self: center;
         margin-right: 10%;
     }
@@ -304,11 +304,11 @@ a {
 
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .submit-btn3 {
-        width: 95%;
+        width: 80% !important;
         align-content: center;
-        margin-right: 10%;
+        margin-right: 20% !important;
     }
 
 

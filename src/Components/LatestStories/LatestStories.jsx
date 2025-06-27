@@ -18,7 +18,7 @@ const LatestStories = () => {
 
     return (
         <div className="stories-wrapper">
-            <p className="stories-wrapper-p testAnton" >D!</p>
+            <p className="stories-wrapper-p testAnton " >D!</p>
             <div className="stories-container">
                 <div className="sidebar">
                     <div className="filter-section scroll-fade-up">
