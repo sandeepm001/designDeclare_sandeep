@@ -1,0 +1,10 @@
+
+.main {
+    background-color: rgb(13, 13, 13);
+    color: rgb(214, 214, 214);
+    padding: 20px;
+    padding-bottom: 180px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-height: 100vh;
+}

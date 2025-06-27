@@ -1,0 +1,54 @@
+.scroll-fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.scroll-fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Wrapper for entire app */
+.app-container {
+  position: relative;
+  max-height: 100vh;
+  overflow-x: hidden;
+  background-color: #fc6444;
+}
+
+/* Main content section */
+.main-content {
+  background-color: transparent;
+  backdrop-filter: blur(0px); /* optional */
+  color: white;
+  z-index: 1;
+}
+
+
+/* Sticky reveal footer */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content; /* match padding-bottom above */
+  background-color: #fc6444; /* your orange footer color */
+  z-index: -1;
+  pointer-events: auto;
+}
+
+
+@media (max-width:1050px) {
+ 
+}
+
+@media (max-width:700px) {
+  
+
+}
+
+@media (max-width:400px) {
+    
+
+}

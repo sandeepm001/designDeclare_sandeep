@@ -1,0 +1,146 @@
+.newsletter{
+    display: flex;
+    gap: 150px;
+    padding-top: 260px;
+}
+.nl-left{
+    width: 395px;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    padding-right: 2rem;
+    align-self: flex-start;
+
+}
+.nl-left p{
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    
+}
+.nl-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:30px;
+    width:740px;
+    flex:1;
+}
+
+.nl-right img{
+    width:100%;
+}
+.nl-right p{
+    margin:0;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.nl-right span{
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.field2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 700px;
+    height: 60px;
+    border: 1px solid white;
+    padding-left: 20px;
+    gap: 10px;
+}
+.field2 label {
+    font-size: 18px;
+    width: fit-content;
+}
+
+.field2 input {
+    all: unset;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    outline:none;
+}
+a{
+    padding-top:10px;
+}
+.submit-btn{
+    padding:10px 22px;
+    
+}
+.consent-item2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    cursor: pointer;
+}
+
+.consent-item2 span{
+    font-size: 12px;
+    align-self: center;
+}
+
+/* reuse checkbox styling */
+
+.checkbox2 {
+    width: 46px;
+    height: 46px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+.consent-item2 .checkbox2 {
+    flex-shrink: 0;
+}
+
+
+@media (max-width:950px) {
+    .newsletter {
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .nl-left {
+        position: relative;
+        width: 100%;
+    }
+
+    .nl-right {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:700px) {
+    .newsletter-form{
+        width:100%;
+    }   
+    .field2{
+        width: 95%;
+    } 
+    .submit-btn{
+        width: 100%;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:400px) {
+    .nl-right p{
+        font-size: 22px;
+
+    }   
+
+}

@@ -1,0 +1,111 @@
+.global-wrapper {
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-bottom: 120px;
+    height: 100vh;
+    padding: 30px;
+}
+
+.global {
+    display: flex;
+    gap: 150px;
+    background-color: black;
+
+}
+
+.global-left {
+    width: 395px;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    padding-right: 2rem;
+    align-self: flex-start;
+
+}
+
+.global-right {
+    width: 740px;
+    flex: 1;
+    margin-top: 55px;
+
+}
+
+.global-left p {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.global-right p {
+    font-size: 100px;
+    font-weight: 600;
+    margin: 0;
+    margin-right: 20px;
+    margin-top: -55px;
+    cursor: pointer;
+}
+.global-right p:hover{
+    color:#fc6444;
+}
+
+@media (max-width:950px) {
+    .global-left {
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .global {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .global-right {
+        margin-top: 30px;
+    }
+
+    .global-right p {
+        font-size: 70px;
+    }
+
+    .global-right {
+        width: 100%;
+    }
+
+    .global-right p {
+        margin-top: -30px;
+    }
+
+}
+
+@media (max-width:600px) {
+    .global-right p {
+        font-size: 60px;
+    }
+
+    .global-right {
+        width: 100%;
+    }
+
+    .global-right p {
+        margin-top: -30px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .global-right p {
+        font-size: 40px;
+    }
+
+    .global-right {
+        width: 100%;
+    }
+
+    .global-right p {
+        margin-top: -20px;
+    }
+
+}

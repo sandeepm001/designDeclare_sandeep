@@ -1,0 +1,54 @@
+.global-support {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.column-set {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Prevent wrapping so all 6 columns stay in one line */
+  max-width: 100%;
+  overflow-x: auto; /* Optional: scroll if screen too small */
+}
+.global-support p{
+  margin:0;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.entry {
+  font-size: 12px;
+  padding: 2px 0;
+}
+.entry:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.country-name {
+  font-weight: bold;
+}
+
+
+@media (max-width:950px) {}
+
+@media (max-width:700px) {
+  .column-set{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+}
+
+@media (max-width:400px) {
+    
+
+}

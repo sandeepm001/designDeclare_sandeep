@@ -1,0 +1,149 @@
+/* ───────────────────────── Backdrop ────────────────────────── */
+.menu-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms cubic-bezier(.4, 0, .2, 1);
+    z-index: 5000;
+}
+
+.menu-backdrop.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ───────────────────────── Root container ──────────────────── */
+.menu-root {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition:
+        width 300ms cubic-bezier(.4, 0, .2, 1),
+        height 300ms cubic-bezier(.4, 0, .2, 1);
+    z-index: 5001;
+}
+
+.menu-root.open {
+    width: 400px;
+    height: fit-content;
+}
+
+/* ───────────────────────── Header row (Menu) ───────────────── */
+.row.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background: #f0f0f0;
+    border: 1px solid #000;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.row.header:hover {
+    background-color: #fc6444;
+}
+
+/* plus / close icon in header */
+.icon-btn {
+    width: 22px;
+    height: 22px;
+    margin-left: 12px;
+}
+
+/* ───────────────────────── Collapsible list ────────────────── */
+.link-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.link-list.show {
+    max-height: fit-content;
+}
+
+/* open */
+
+.link-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: .7rem 1.2rem;
+    cursor: pointer;
+    background-color: white;
+    font-size: 24px;
+}
+
+.link-list li:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    /* icons inside list items */
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* ───────────────────────── Declare Now row ─────────────────── */
+.declare-btn {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #000;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 1rem 0;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.declare-btn:hover {
+    background-color: #fc6444;
+}
+
+@media (max-width:600px) {
+
+    .menu-root {
+        width: 90%;
+    }
+
+    .menu-root.open {
+        width: 90%;
+    }
+
+    .row.header {
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .link-list li {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .declare-btn {
+        font-size: 20px;
+    }
+
+    .menu-root {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
