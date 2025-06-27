@@ -327,7 +327,7 @@
     }
 }
 
-@media (max-width:420px) {
+@media (max-width:430px) {
     .submit-btn3 {
         width: 95%;
         align-content: center;
@@ -351,7 +351,7 @@
         width:50%;
     }
     .about3-left p{
-        width:50%;
+        width:45%;
 
     }
     .about3-right-div img{

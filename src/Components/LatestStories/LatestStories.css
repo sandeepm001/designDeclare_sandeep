@@ -185,12 +185,12 @@
 
 }
 
-@media (max-width:420px) {
+@media (max-width:430px) {
     .story-img{
-        width:50%;
+        width:45%;
     }
     .story-info{
-        width:50%;
+        width:45%;
     }
 
 }
