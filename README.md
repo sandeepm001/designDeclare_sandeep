@@ -1,7 +1,7 @@
-#You can get a live link of this frontend project
+##You can get a live link of this frontend project
 
 # 
-## clone this repo in your system and install all dependencies
+#clone this repo in your system and install all dependencies
 
 ### `npm start` to start the app
 
